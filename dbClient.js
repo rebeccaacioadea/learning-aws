@@ -1,10 +1,11 @@
 
+
+
 const {
   DynamoDBClient
 } = require('@aws-sdk/client-dynamodb')
 
-let parms = { credentials: { secretAccessKey: 'EqAqx1EqGq7gEb6UilypI3D6DEycjxkfyt88Yaof',
-  accessKeyId: 'AKIA6I4X2TNMVIZAP6U4' }, region: 'eu-west-2' }
+let parms = PARMS
 
 if (process.platform !== 'darwin') {
   parms = { }
