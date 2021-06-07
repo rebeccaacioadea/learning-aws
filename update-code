@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# chmod: Change mode
+# chmod +x: Add executable mode to a file
+# ./update-code: update the file
+# echo "hello world"
+
+# ls
+
+zip -r ../getEmployees.zip .
+
+# this command line update the lambda function on aws.
+aws lambda update-function-code --function-name dev_getEmployees --zip-file fileb://$PWD/../getEmployees.zip

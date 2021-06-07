@@ -1,5 +1,6 @@
 const aws = require('aws-sdk')
 
+
 const { unmarshall } = require('@aws-sdk/util-dynamodb')
 
 const {
@@ -10,8 +11,9 @@ const {
   UpdateItemCommand
 } = require('@aws-sdk/client-dynamodb')
 
-const dbClient =  new DynamoDBClient({ credentials: { secretAccessKey: 'bTwnJ8rtEnGx/ta7WNmZ0ryq56sDYWshZijS6Tdw',
-  accessKeyId: 'AKIA6I4X2TNMUJUKV7HO' }, region: 'eu-west-2' })
+const dbClient = require('./dbClient')
+
+
 const TABLE_NAME = 'Employees'
 
 
