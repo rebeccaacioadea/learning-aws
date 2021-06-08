@@ -12,7 +12,7 @@ const {
 } = require('@aws-sdk/client-dynamodb')
 
 const dbClient = require('./dbClient')
-
+console.log(dbClient)
 
 const TABLE_NAME = 'Employees'
 
